@@ -1,0 +1,612 @@
+[{
+  "_id": {
+    "$oid": "6655ae36a7dacb67e52fd5f3"
+  },
+  "name": [
+    "তাওহীদ",
+    "التوحيد ",
+    "التوحيد "
+  ],
+  "mainCategory": "category974852",
+  "subCategoryId": "category37565sub31258"
+},
+{
+  "_id": {
+    "$oid": "6655af58a5dca58bc32120f8"
+  },
+  "name": [
+    "توحيد الأسماء والصفات ",
+    "توحيد الأسماء والصفات ",
+    "توحيد الأسماء والصفات "
+  ],
+  "mainCategory": "category37565",
+  "subCategoryId": "category37565sub51066"
+},
+{
+  "_id": {
+    "$oid": "6655b54e6f78a979cb38d97c"
+  },
+  "name": [
+    "মাযাহেব, ফিরাক, ধর্ম",
+    "الأديان والفرق والمذاهب ",
+    "الأديان والفرق والمذاهب "
+  ],
+  "mainCategory": "category37565",
+  "subCategoryId": "category37565sub151590"
+},
+{
+  "_id": {
+    "$oid": "6655b6a111ce33d3e9ca1c8c"
+  },
+  "name": [
+    "তাজভিদ",
+    "তাজভিদ",
+    "التجويد "
+  ],
+  "mainCategory": "category420596",
+  "subCategoryId": "category420596sub625747"
+},
+{
+  "_id": {
+    "$oid": "6655b6d211ce33d3e9ca1c8d"
+  },
+  "name": [
+    "কিরাত",
+    "القراءات",
+    "القراءات"
+  ],
+  "mainCategory": "category420596",
+  "subCategoryId": "category420596sub750745"
+},
+{
+  "_id": {
+    "$oid": "6655b71311ce33d3e9ca1c8e"
+  },
+  "name": [
+    "আল কুরআনুল কারীম",
+    "আল কুরআনুল কারীম",
+    "القرآن والمصاحف"
+  ],
+  "mainCategory": "category368821",
+  "subCategoryId": "category368821sub456727"
+},
+{
+  "_id": {
+    "$oid": "6655b733897f6ab112ac3e26"
+  },
+  "name": [
+    "তাফসীর ও আসবাবে নযূল",
+    "তাফসীর ও আসবাবে নযূল",
+    "التفاسير وأسباب النزول"
+  ],
+  "mainCategory": "category368821",
+  "subCategoryId": "category368821sub979355"
+},
+{
+  "_id": {
+    "$oid": "6655b750897f6ab112ac3e28"
+  },
+  "name": [
+    "ঊলুমুল কোরআন",
+    "ঊলুমুল কোরআন",
+    "علوم القرآن الكريم "
+  ],
+  "mainCategory": "category368821",
+  "subCategoryId": "category368821sub323158"
+},
+{
+  "_id": {
+    "$oid": "6655b81111ce33d3e9ca1c90"
+  },
+  "name": [
+    "হাদীসের মতন",
+    "হাদীসের মতন",
+    "متون الحديث "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub206238"
+},
+{
+  "_id": {
+    "$oid": "6655b82aad712ef8cc563fe6"
+  },
+  "name": [
+    "হাদীসের ব্যাখ্যা গ্রন্থ",
+    "হাদীসের ব্যাখ্যা গ্রন্থ",
+    "شروحات الحديث "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub889610"
+},
+{
+  "_id": {
+    "$oid": "6655b867897f6ab112ac3e2b"
+  },
+  "name": [
+    "ঊলুমুল হাদীস",
+    "ঊলুমুল হাদীস",
+    "علوم الحديث ومصطلحاتها "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub126492"
+},
+{
+  "_id": {
+    "$oid": "6655b974897f6ab112ac3e2d"
+  },
+  "name": [
+    "আসমা ও রিজাল",
+    "আসমা ও রিজাল",
+    " الأسماء والرجال "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub779689"
+},
+{
+  "_id": {
+    "$oid": "6655b996897f6ab112ac3e2f"
+  },
+  "name": [
+    "জারহ ও ত্বাদীল",
+    "জারহ ও ত্বাদীল",
+    "الجرح والتعديل والنقد "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub368123"
+},
+{
+  "_id": {
+    "$oid": "6655b9b7897f6ab112ac3e31"
+  },
+  "name": [
+    "জীবনী, তবাকাত ও আনসাব",
+    "জীবনী, তবাকাত ও আনসাব",
+    "التراجم والطبقات والأنساب "
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub311584"
+},
+{
+  "_id": {
+    "$oid": "6655ba65897f6ab112ac3e33"
+  },
+  "name": [
+    "ফতোয়া",
+    "ফতোয়া",
+    "الفتاوى "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub415773"
+},
+{
+  "_id": {
+    "$oid": "6655ba69897f6ab112ac3e34"
+  },
+  "name": [
+    "ফতোয়া",
+    "ফতোয়া",
+    "الفتاوى "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub86713"
+},
+{
+  "_id": {
+    "$oid": "6655ba7f897f6ab112ac3e35"
+  },
+  "name": [
+    "ফিকহী মাসআলাহ",
+    "ফিকহী মাসআলাহ",
+    "المسائل الفقهية "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub969969"
+},
+{
+  "_id": {
+    "$oid": "6655ba93897f6ab112ac3e36"
+  },
+  "name": [
+    "ফিকহে হানাফী",
+    "ফিকহে হানাফী",
+    "الفقه الحنفي "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub486735"
+},
+{
+  "_id": {
+    "$oid": "6655baae897f6ab112ac3e37"
+  },
+  "name": [
+    "ফিকহে শাফেয়ী",
+    "ফিকহে শাফেয়ী",
+    "الفقه الشافعي "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub973812"
+},
+{
+  "_id": {
+    "$oid": "6655bac6897f6ab112ac3e39"
+  },
+  "name": [
+    "ফিকহে মালেকী",
+    "ফিকহে মালেকী",
+    "الفقه المالكي "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub762929"
+},
+{
+  "_id": {
+    "$oid": "6655bada897f6ab112ac3e3a"
+  },
+  "name": [
+    "ফিকহে হাম্বলী",
+    "ফিকহে হাম্বলী",
+    "الفقه الحنبلي"
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub979427"
+},
+{
+  "_id": {
+    "$oid": "6655baf0897f6ab112ac3e3c"
+  },
+  "name": [
+    "ঊসূলুল ফিকহ",
+    "ঊসূলুল ফিকহ",
+    "أصول الفقه  "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub305120"
+},
+{
+  "_id": {
+    "$oid": "6655bb06897f6ab112ac3e3d"
+  },
+  "name": [
+    "ফিকহী রিচার্জ ও গভেষণা",
+    "ফিকহী রিচার্জ ও গভেষণা",
+    "دراسات فقهية "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub662419"
+},
+{
+  "_id": {
+    "$oid": "6655bb1f897f6ab112ac3e3e"
+  },
+  "name": [
+    "মাযাহেব ও দ্বীন",
+    "মাযাহেব ও দ্বীন",
+    "فقه المذاهب والأديان "
+  ],
+  "mainCategory": "category341783",
+  "subCategoryId": "category341783sub764321"
+},
+{
+  "_id": {
+    "$oid": "6655bbd7b9b6ece84c31508e"
+  },
+  "name": [
+    "সিরাতে রাসূল (সা:)",
+    "সিরাতে রাসূল (সা:)",
+    "السيرة النبوية والشمائل "
+  ],
+  "mainCategory": "category707874",
+  "subCategoryId": "category707874sub166666"
+},
+{
+  "_id": {
+    "$oid": "6655bf9e065aed1c34a5135a"
+  },
+  "name": [
+    "সাহাবা জিবনী",
+    "সাহাবা জিবনী",
+    "حياة الصحابة"
+  ],
+  "mainCategory": "category707874",
+  "subCategoryId": "category707874sub819040"
+},
+{
+  "_id": {
+    "$oid": "6655bfdc065aed1c34a5135b"
+  },
+  "name": [
+    "তাবেয়ীদের জিবনী",
+    "তাবেয়ীদের জিবনী",
+    "حياة التابعين"
+  ],
+  "mainCategory": "category707874",
+  "subCategoryId": "category707874sub490474"
+},
+{
+  "_id": {
+    "$oid": "6655c008065aed1c34a5135c"
+  },
+  "name": [
+    "মহিলা সাহাবী",
+    "মহিলা সাহাবী",
+    "حياة الصحابيات"
+  ],
+  "mainCategory": "category707874",
+  "subCategoryId": "category707874sub65904"
+},
+{
+  "_id": {
+    "$oid": "6655c044065aed1c34a5135e"
+  },
+  "name": [
+    "বয়ান ও খুতবা",
+    "বয়ান ও খুতবা",
+    "الخطبات "
+  ],
+  "mainCategory": "category974852",
+  "subCategoryId": "category974852sub777776"
+},
+{
+  "_id": {
+    "$oid": "6655c05a065aed1c34a5135f"
+  },
+  "name": [
+    "ওয়াজ নসীহত",
+    "ওয়াজ নসীহত",
+    "الدروس والمواعيظ"
+  ],
+  "mainCategory": "category974852",
+  "subCategoryId": "category974852sub957064"
+},
+{
+  "_id": {
+    "$oid": "6655c19fcd251212a6ca3643"
+  },
+  "name": [
+    "তাসাউউফ , তাযকিয়াহ",
+    "তাসাউউফ , তাযকিয়াহ",
+    "التصوف والتزكية"
+  ],
+  "mainCategory": "category575979",
+  "subCategoryId": "category575979sub667107"
+},
+{
+  "_id": {
+    "$oid": "6655c1b7cd251212a6ca3644"
+  },
+  "name": [
+    "আদব, আখলাক, পরহেযগারী",
+    "আদব, আখলাক, পরহেযগারী",
+    "الأداب والزهد والرقائق "
+  ],
+  "mainCategory": "category575979",
+  "subCategoryId": "category575979sub10072"
+},
+{
+  "_id": {
+    "$oid": "6655c317cd251212a6ca3645"
+  },
+  "name": [
+    "রাজনীতি",
+    "রাজনীতি",
+    "السياسة "
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub908420"
+},
+{
+  "_id": {
+    "$oid": "6655c36fcd251212a6ca3646"
+  },
+  "name": [
+    "অর্থনিতী",
+    "অর্থনিতী",
+    "الاقتصاد "
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub448569"
+},
+{
+  "_id": {
+    "$oid": "6655c3b5cd251212a6ca3647"
+  },
+  "name": [
+    "ধর্মীয় রাজনীতি",
+    "ধর্মীয় রাজনীতি",
+    "السياسة الشرعية "
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub786621"
+},
+{
+  "_id": {
+    "$oid": "6655c3facd251212a6ca364a"
+  },
+  "name": [
+    "আইন ও সংবিধাণ",
+    "আইন ও সংবিধাণ",
+    "السياسة والقانون"
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub512010"
+},
+{
+  "_id": {
+    "$oid": "6655c446cd251212a6ca364b"
+  },
+  "name": [
+    "তালীম ও তারবিয়াত",
+    "তালীম ও তারবিয়াত",
+    "التعليم والتربية "
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub424770"
+},
+{
+  "_id": {
+    "$oid": "6655c48fcd251212a6ca364d"
+  },
+  "name": [
+    "ইসলামী শিক্ষা",
+    "ইসলামী শিক্ষা",
+    "دراسات إسلامية "
+  ],
+  "mainCategory": "category660287",
+  "subCategoryId": "category660287sub362648"
+},
+{
+  "_id": {
+    "$oid": "6655c56df46fa4529ba3184d"
+  },
+  "name": [
+    "পরিবার ও সমাজ",
+    "পরিবার ও সমাজ",
+    "الأسرة والمجتمع"
+  ],
+  "mainCategory": "category80498",
+  "subCategoryId": "category80498sub786280"
+},
+{
+  "_id": {
+    "$oid": "6655c6fa57dba8c5ff48a5da"
+  },
+  "name": [
+    "শিশুতোষ",
+    "শিশুতোষ",
+    "كتب الأطفال"
+  ],
+  "mainCategory": "category840341",
+  "subCategoryId": "category840341sub377726"
+},
+{
+  "_id": {
+    "$oid": "6655c72fe7a92e85102074b7"
+  },
+  "name": [
+    "ইসলামী ইতিহাস",
+    "ইসলামী ইতিহাস",
+    "التاريخ الإسلامي "
+  ],
+  "mainCategory": "category701807",
+  "subCategoryId": "category701807sub153353"
+},
+{
+  "_id": {
+    "$oid": "6655c7a8e7a92e85102074b8"
+  },
+  "name": [
+    "ইসলামী ইতিহাস",
+    "ইসলামী ইতিহাস",
+    "التاريخ الإسلامي "
+  ],
+  "mainCategory": "category701807",
+  "subCategoryId": "category701807sub113339"
+},
+{
+  "_id": {
+    "$oid": "6655c7e3e7a92e85102074b9"
+  },
+  "name": [
+    "আরবী সাহিত্য",
+    "আরবী সাহিত্য",
+    "اللغة العربية"
+  ],
+  "mainCategory": "category602851",
+  "subCategoryId": "category602851sub147030"
+},
+{
+  "_id": {
+    "$oid": "6655c7fee7a92e85102074ba"
+  },
+  "name": [
+    "নাহু-সরফ",
+    "নাহু-সরফ",
+    "النحو والصرف"
+  ],
+  "mainCategory": "category602851",
+  "subCategoryId": "category602851sub868858"
+},
+{
+  "_id": {
+    "$oid": "6655c826e7a92e85102074bb"
+  },
+  "name": [
+    "কবিতা",
+    "কবিতা",
+    "النظم والأشعار "
+  ],
+  "mainCategory": "category602851",
+  "subCategoryId": "category602851sub817574"
+},
+{
+  "_id": {
+    "$oid": "6655c843bd338715325c2f68"
+  },
+  "name": [
+    "বালাগাত",
+    "বালাগাত",
+    "علم البلاغة "
+  ],
+  "mainCategory": "category602851",
+  "subCategoryId": "category602851sub401757"
+},
+{
+  "_id": {
+    "$oid": "6655c89a289417e9933d91cf"
+  },
+  "name": [
+    "অভিধান গ্রন্থ",
+    "অভিধান গ্রন্থ",
+    "المعاجم والقواميس والموسوعات"
+  ],
+  "mainCategory": "category691777",
+  "subCategoryId": "category691777sub566617"
+},
+{
+  "_id": {
+    "$oid": "6655c8ac289417e9933d91d0"
+  },
+  "name": [
+    "অভিধান গ্রন্থ",
+    "ইনসাইক্ল পেডিয়া",
+    "الموسوعات "
+  ],
+  "mainCategory": "category691777",
+  "subCategoryId": "category691777sub203020"
+},
+{
+  "_id": {
+    "$oid": "6655c8d8289417e9933d91d1"
+  },
+  "name": [
+    "ভ্রমন ও সফর",
+    "ভ্রমন ও সফর",
+    "الرحلات "
+  ],
+  "mainCategory": "category838559",
+  "subCategoryId": "category838559sub541065"
+},
+{
+  "_id": {
+    "$oid": "66570adf08e4ce7cc14f5060"
+  },
+  "name": [
+    "আদব-আখলাক বা মুসলিম শিষ্টাচার",
+    "Adab-Akhlaq or Muslim etiquette",
+    "الأدب والأخلاق أو آداب المسلمين"
+  ],
+  "mainCategory": "category60175",
+  "subCategoryId": "category60175sub790746"
+},
+{
+  "_id": {
+    "$oid": "665d6a80dea717d2b67f5d87"
+  },
+  "name": [
+    "কুরআনের ব্যকারণ",
+    "Grammar of Quran",
+    "قواعد القرآن"
+  ],
+  "mainCategory": "category368821",
+  "subCategoryId": "category368821sub864390"
+}]

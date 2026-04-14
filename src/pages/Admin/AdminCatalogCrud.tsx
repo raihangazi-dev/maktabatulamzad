@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import {
   useAllBooks,
@@ -265,7 +266,7 @@ const EntityCrudSection = ({
             <>
               <div className="space-y-2 md:col-span-2">
                 <Label>Description (English)</Label>
-                <Input
+                <Textarea
                   value={form.descEn}
                   onChange={(event) => setForm((prev) => ({ ...prev, descEn: event.target.value }))}
                   placeholder="Description in English"
@@ -273,7 +274,7 @@ const EntityCrudSection = ({
               </div>
               <div className="space-y-2 md:col-span-2">
                 <Label>Description (Bangla)</Label>
-                <Input
+                <Textarea
                   value={form.descBn}
                   onChange={(event) => setForm((prev) => ({ ...prev, descBn: event.target.value }))}
                   placeholder="Description in Bangla"
@@ -281,7 +282,7 @@ const EntityCrudSection = ({
               </div>
               <div className="space-y-2 md:col-span-2">
                 <Label>Description (Arabic)</Label>
-                <Input
+                <Textarea
                   value={form.descAr}
                   onChange={(event) => setForm((prev) => ({ ...prev, descAr: event.target.value }))}
                   placeholder="Description in Arabic"
@@ -661,7 +662,7 @@ const AdminCatalogCrud = () => {
 
                 <div className="space-y-2 md:col-span-2">
                   <Label>Description (English)</Label>
-                  <Input
+                  <Textarea
                     value={bookForm.descEn}
                     onChange={(event) => setBookForm((prev) => ({ ...prev, descEn: event.target.value }))}
                     placeholder="Description in English"
@@ -669,7 +670,7 @@ const AdminCatalogCrud = () => {
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label>Description (Bangla)</Label>
-                  <Input
+                  <Textarea
                     value={bookForm.descBn}
                     onChange={(event) => setBookForm((prev) => ({ ...prev, descBn: event.target.value }))}
                     placeholder="Description in Bangla"
@@ -677,7 +678,7 @@ const AdminCatalogCrud = () => {
                 </div>
                 <div className="space-y-2 md:col-span-2">
                   <Label>Description (Arabic)</Label>
-                  <Input
+                  <Textarea
                     value={bookForm.descAr}
                     onChange={(event) => setBookForm((prev) => ({ ...prev, descAr: event.target.value }))}
                     placeholder="Description in Arabic"
