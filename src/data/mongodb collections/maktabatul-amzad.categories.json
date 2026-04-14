@@ -1,231 +1,191 @@
-[{
-  "_id": {
-    "$oid": "6655a480c03a18f7530e78a8"
+[
+  {
+    "_id": { "$oid": "6655a480c03a18f7530e78a8" },
+    "name": [
+      "আকিদা ও তাওহীদ",
+      "Aqidah and Tawheed",
+      "العقيدة وأصول الدين"
+    ],
+    "categoryId": "category37565"
   },
-  "name": [
-    "আকিদা ও তাওহীদ ",
-    "العقيدة وأصول الدين ",
-    "العقيدة وأصول الدين "
-  ],
-  "categoryId": "category37565"
-},
-{
-  "_id": {
-    "$oid": "6655a4a5c03a18f7530e78a9"
+  {
+    "_id": { "$oid": "6655a4a5c03a18f7530e78a9" },
+    "name": [
+      "কিরাআত ও তাজভীদ",
+      "Qira'at and Tajweed",
+      "القراءات والتجويد"
+    ],
+    "categoryId": "category420596"
   },
-  "name": [
-    "কিরাআত ও তাজভীদ",
-    "القراءات والتجويد",
-    "القراءات والتجويد"
-  ],
-  "categoryId": "category420596"
-},
-{
-  "_id": {
-    "$oid": "6655a5e88db6e953baf1eca1"
+  {
+    "_id": { "$oid": "6655a5e88db6e953baf1eca1" },
+    "name": [
+      "কুরআন ও উলূমুল কুরআন",
+      "Quran and its Sciences",
+      "القرآن الكريم و علومه"
+    ],
+    "categoryId": "category368821"
   },
-  "name": [
-    "কুরআন ও উলূমুল কুরআন",
-    "القرآن الكريم و علومه",
-    "القرآن الكريم و علومه"
-  ],
-  "categoryId": "category368821"
-},
-{
-  "_id": {
-    "$oid": "6655a74368488726afb144fd"
+  {
+    "_id": { "$oid": "6655a74368488726afb144fd" },
+    "name": [
+      "হাদীস ও উলুমুল হাদীস",
+      "Hadith and Ulumul Hadith",
+      "الحديث الشريف وعلومه"
+    ],
+    "categoryId": "category60175"
   },
-  "name": [
-    "হাদীস ও  উলুমুল হাদীস",
-    "Hadith and Ulumul Hadith",
-    "الحديث الشريف وعلومه "
-  ],
-  "categoryId": "category60175"
-},
-{
-  "_id": {
-    "$oid": "6655a78e68488726afb144fe"
+  {
+    "_id": { "$oid": "6655a78e68488726afb144fe" },
+    "name": [
+      "ফিকহ ও উসূলুল ফিকহ",
+      "Fiqh and Usul al-Fiqh",
+      "الفقه الإسلامي وأصوله"
+    ],
+    "categoryId": "category341783"
   },
-  "name": [
-    "ফিকহ ও উসূলুল ফিকহ",
-    "الفقه الإسلامي وأصوله ",
-    "الفقه الإسلامي وأصوله "
-  ],
-  "categoryId": "category341783"
-},
-{
-  "_id": {
-    "$oid": "6655a8308db6e953baf1eca2"
+  {
+    "_id": { "$oid": "6655a8308db6e953baf1eca2" },
+    "name": [
+      "সিরাতে রাসূল . সাহাবা ও তাবেইন",
+      "Seerah of Rasul, Sahabah and Tabi'een",
+      "السيرة النبوية ، والصحابة والتابعين"
+    ],
+    "categoryId": "category707874"
   },
-  "name": [
-    "সিরাতে রাসূল . সাহাবা ও তাবেিইন",
-    "السيرة النبوية ، والصحابة والتابعين",
-    "السيرة النبوية ، والصحابة والتابعين"
-  ],
-  "categoryId": "category707874"
-},
-{
-  "_id": {
-    "$oid": "6655aadea5dca58bc32120e5"
+  {
+    "_id": { "$oid": "6655aadea5dca58bc32120e5" },
+    "name": [
+      "ওয়াজ নসীহত",
+      "Waz and Advice",
+      "الخطبات و المواعيظ"
+    ],
+    "categoryId": "category974852"
   },
-  "name": [
-    "ওয়াজ নসীহত",
-    "الخطبات و المواعيظ ",
-    "الخطبات و المواعيظ "
-  ],
-  "categoryId": "category974852"
-},
-{
-  "_id": {
-    "$oid": "6655ab06a5dca58bc32120e6"
+  {
+    "_id": { "$oid": "6655ab06a5dca58bc32120e6" },
+    "name": [
+      "তাসাউউফ , তাযকিয়াহ",
+      "Tasawwuf and Tazkiyah",
+      "الزهد والرقائق"
+    ],
+    "categoryId": "category575979"
   },
-  "name": [
-    "তাসাউউফ , তাযকিয়াহ",
-    "الزهد والرقائق",
-    "الزهد والرقائق"
-  ],
-  "categoryId": "category575979"
-},
-{
-  "_id": {
-    "$oid": "6655ab5ea5dca58bc32120e7"
+  {
+    "_id": { "$oid": "6655ab5ea5dca58bc32120e7" },
+    "name": [
+      "রাজনীতি ও অর্থনীতি",
+      "Politics and Economics",
+      "السياسة والاقتصاد"
+    ],
+    "categoryId": "category660287"
   },
-  "name": [
-    "রাজনীতি ও অর্থনীতি",
-    "السياسة والاقتصاد",
-    "السياسة والاقتصاد"
-  ],
-  "categoryId": "category660287"
-},
-{
-  "_id": {
-    "$oid": "6655ab90a5dca58bc32120e8"
+  {
+    "_id": { "$oid": "6655ab90a5dca58bc32120e8" },
+    "name": [
+      "শিক্ষা - দিক্ষা",
+      "Education and Training",
+      "التربية والتعليم"
+    ],
+    "categoryId": "category674891"
   },
-  "name": [
-    "শিক্ষা - দিক্ষা",
-    "التربية والتعليم ",
-    "التربية والتعليم "
-  ],
-  "categoryId": "category674891"
-},
-{
-  "_id": {
-    "$oid": "6655abb7a5dca58bc32120e9"
+  {
+    "_id": { "$oid": "6655abb7a5dca58bc32120e9" },
+    "name": [
+      "পরিবার ও সমাজ",
+      "Family and Society",
+      "الأسرة و المجتمع"
+    ],
+    "categoryId": "category80498"
   },
-  "name": [
-    "পরিবার ও সমাজ",
-    "الأسرة و المجتمع",
-    "الأسرة و المجتمع"
-  ],
-  "categoryId": "category80498"
-},
-{
-  "_id": {
-    "$oid": "6655abd3a5dca58bc32120ea"
+  {
+    "_id": { "$oid": "6655abd3a5dca58bc32120ea" },
+    "name": [
+      "শিশুতোষ",
+      "Children's Books",
+      "الأطفال"
+    ],
+    "categoryId": "category840341"
   },
-  "name": [
-    "শিশুতোষ",
-    "الأطفال ",
-    "الأطفال "
-  ],
-  "categoryId": "category840341"
-},
-{
-  "_id": {
-    "$oid": "6655abfea5dca58bc32120eb"
+  {
+    "_id": { "$oid": "6655abfea5dca58bc32120eb" },
+    "name": [
+      "ইতিহাস ও ভুগোল",
+      "History and Geography",
+      "التاريخ والجفرافيا"
+    ],
+    "categoryId": "category701807"
   },
-  "name": [
-    "ইতিহাস ও ভুগোল",
-    "التاريخ والجفرافيا",
-    "التاريخ والجفرافيا"
-  ],
-  "categoryId": "category701807"
-},
-{
-  "_id": {
-    "$oid": "6655ac23a5dca58bc32120ec"
+  {
+    "_id": { "$oid": "6655ac23a5dca58bc32120ec" },
+    "name": [
+      "আরবী সাহিত্য",
+      "Arabic Literature and Sciences",
+      "اللغة العربية وعلومها"
+    ],
+    "categoryId": "category602851"
   },
-  "name": [
-    "আরবী সাহিত্য",
-    "اللغة  العربية وعلومها ",
-    "اللغة  العربية وعلومها "
-  ],
-  "categoryId": "category602851"
-},
-{
-  "_id": {
-    "$oid": "6655ac77a5dca58bc32120ed"
+  {
+    "_id": { "$oid": "6655ac77a5dca58bc32120ed" },
+    "name": [
+      "অভিধান ও সব্দকোষ",
+      "Dictionaries and Lexicons",
+      "المعاجم والقواميس"
+    ],
+    "categoryId": "category691777"
   },
-  "name": [
-    "অভিধান ও সব্দকোষ",
-    "المعاجم والقواميس ",
-    "المعاجم والقواميس "
-  ],
-  "categoryId": "category691777"
-},
-{
-  "_id": {
-    "$oid": "6655ac9aa5dca58bc32120ee"
+  {
+    "_id": { "$oid": "6655ac9aa5dca58bc32120ee" },
+    "name": [
+      "ইনসাইক্ল পেডিয়া",
+      "Encyclopedia",
+      "الموسوعات"
+    ],
+    "categoryId": "category851367"
   },
-  "name": [
-    "ইনসাইক্ল পেডিয়া",
-    "الموسوعات ",
-    "الموسوعات "
-  ],
-  "categoryId": "category851367"
-},
-{
-  "_id": {
-    "$oid": "6655acc3a5dca58bc32120f0"
+  {
+    "_id": { "$oid": "6655acc3a5dca58bc32120f0" },
+    "name": [
+      "ভ্রমন ও সফর",
+      "Travel and Journeys",
+      "الرحلات"
+    ],
+    "categoryId": "category838559"
   },
-  "name": [
-    "ভ্রমন ও সফর",
-    "الرحلات ",
-    "الرحلات "
-  ],
-  "categoryId": "category838559"
-},
-{
-  "_id": {
-    "$oid": "665d64962d0d4c6818c188c7"
+  {
+    "_id": { "$oid": "665d64962d0d4c6818c188c7" },
+    "name": [
+      "মুসলিম উত্তরাধিকার আইন",
+      "Muslim Law of Inheritance",
+      "الفرائض في الميراث"
+    ],
+    "categoryId": "category354197"
   },
-  "name": [
-    "মুসলিম উত্তরাধিকার আইন",
-    "Muslim Law of Inheritance",
-    "الفرائض في الميراث"
-  ],
-  "categoryId": "category354197"
-},
-{
-  "_id": {
-    "$oid": "693a53da13ad6d11ceaa81d8"
+  {
+    "_id": { "$oid": "693a53da13ad6d11ceaa81d8" },
+    "name": [
+      "খেলাফত",
+      "Caliphate",
+      "الخلافة"
+    ],
+    "categoryId": "category230104"
   },
-  "name": [
-    " খেলাফত",
-    "Caliphate",
-    "الخلافة"
-  ],
-  "categoryId": "category230104"
-},
-{
-  "_id": {
-    "$oid": "693a6bf070bfb7bd204fc95b"
+  {
+    "_id": { "$oid": "693a6bf070bfb7bd204fc95b" },
+    "name": [
+      "ইলমুত-তীব",
+      "Ilmut-tib",
+      "علم الطب"
+    ],
+    "categoryId": "category134112"
   },
-  "name": [
-    "ইলমুত-তীব",
-    "Ilmut-tib",
-    "علم الطب"
-  ],
-  "categoryId": "category134112"
-},
-{
-  "_id": {
-    "$oid": "693a76bc76fc4ed309cc9e0d"
-  },
-  "name": [
-    "ইলমুল ফিতান ",
-    "Ilmul Fitan",
-    "علم الفتن"
-  ],
-  "categoryId": "category33281"
-}]
+  {
+    "_id": { "$oid": "693a76bc76fc4ed309cc9e0d" },
+    "name": [
+      "ইলমুল ফিতান",
+      "Ilmul Fitan",
+      "علم الفتن"
+    ],
+    "categoryId": "category33281"
+  }
+]
