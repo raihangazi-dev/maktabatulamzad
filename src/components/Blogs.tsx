@@ -1,34 +1,27 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, User, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useAllBooks } from "@/hooks/use-catalog";
+import { getBookAuthor, getDisplayText } from "@/lib/catalog-ui";
+import { useMemo } from "react";
 
 const Blogs = () => {
-  const blogs = [
-    {
-      title: "Understanding the Five Pillars of Islam",
-      excerpt: "Explore the fundamental practices that form the foundation of Islamic faith and practice.",
-      author: "Dr. Ahmed Hassan",
-      date: "March 15, 2024",
-      image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=600&h=400&fit=crop",
-      category: "Fundamentals",
-    },
-    {
-      title: "The Art of Quranic Recitation",
-      excerpt: "Learn about Tajweed and the beautiful science of reciting the Holy Quran correctly.",
-      author: "Sheikh Muhammad Ali",
-      date: "March 12, 2024",
-      image: "https://images.unsplash.com/photo-1564769610726-0dd525e0a2f2?w=600&h=400&fit=crop",
-      category: "Quran",
-    },
-    {
-      title: "Islamic Finance in Modern Times",
-      excerpt: "Discover how Islamic financial principles apply in today's economic landscape.",
-      author: "Dr. Fatima Rahman",
-      date: "March 10, 2024",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-      category: "Contemporary",
-    },
-  ];
+  const { data: books = [] } = useAllBooks();
+
+  const highlights = useMemo(() => {
+    return [...books]
+      .sort((a, b) => Number(b.sold || 0) - Number(a.sold || 0))
+      .slice(0, 3)
+      .map((book) => ({
+        id: book._id,
+        title: getDisplayText(book.title),
+        excerpt: getDisplayText(book.desc).slice(0, 140),
+        author: getBookAuthor(book),
+        date: book.publishedYear || "-",
+        image: book.thumb,
+        category: getDisplayText(book.categoryDetails?.[0]?.name) || "Books",
+      }));
+  }, [books]);
 
   return (
     <section className="py-16 bg-muted">
@@ -38,21 +31,17 @@ const Blogs = () => {
           <p className="text-muted-foreground">Insights, knowledge, and reflections on Islamic teachings</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {blogs.map((blog, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group">
+          {highlights.map((blog) => (
+            <Card key={blog.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group">
               <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={blog.image} 
-                  alt={blog.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+                <img src={blog.image} alt={blog.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                 <div className="absolute top-3 left-3 bg-primary text-primary-foreground px-3 py-1 rounded text-xs font-semibold">
                   {blog.category}
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-semibold text-xl mb-2 text-foreground line-clamp-2">{blog.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{blog.excerpt}</p>
+                <p className="text-sm text-muted-foreground mb-4 line-clamp-2">{blog.excerpt}...</p>
                 <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
                   <div className="flex items-center gap-1">
                     <User className="h-3 w-3" />

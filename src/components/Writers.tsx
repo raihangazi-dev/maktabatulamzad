@@ -1,46 +1,15 @@
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { PenTool } from "lucide-react";
+import { useAllBooks, useWriters } from "@/hooks/use-catalog";
+import { getDisplayText } from "@/lib/catalog-ui";
 
 const Writers = () => {
-  const writers = [
-    {
-      name: "Imam Ibn Taymiyyah",
-      books: 85,
-      specialty: "Islamic Jurisprudence",
-      image: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=300&h=300&fit=crop",
-    },
-    {
-      name: "Imam Al-Nawawi",
-      books: 42,
-      specialty: "Hadith Sciences",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
-    },
-    {
-      name: "Ibn Qayyim Al-Jawziyya",
-      books: 67,
-      specialty: "Islamic Philosophy",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
-    },
-    {
-      name: "Imam As-Suyuti",
-      books: 120,
-      specialty: "Tafsir & History",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
-    },
-    {
-      name: "Dr. Zakir Naik",
-      books: 28,
-      specialty: "Comparative Religion",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
-    },
-    {
-      name: "Maulana Tariq Jameel",
-      books: 15,
-      specialty: "Islamic Ethics",
-      image: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=300&h=300&fit=crop",
-    },
-  ];
+  const { data: writers = [], isLoading } = useWriters();
+  const { data: books = [] } = useAllBooks();
+
+  const countBooks = (writerId: string) =>
+    books.filter((book) => Array.isArray(book.writer) && book.writer.includes(writerId)).length;
 
   return (
     <section className="py-16 bg-muted">
@@ -52,26 +21,32 @@ const Writers = () => {
           </div>
           <p className="text-muted-foreground">Scholars and writers who shaped Islamic literature</p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-          {writers.map((writer, index) => (
-            <Link to="/writers" key={index}>
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer text-center">
-                <div className="w-full aspect-square overflow-hidden">
-                  <img 
-                    src={writer.image} 
-                    alt={writer.name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-sm mb-1 text-foreground">{writer.name}</h3>
-                  <p className="text-xs text-muted-foreground mb-1">{writer.specialty}</p>
-                  <p className="text-xs text-primary font-medium">{writer.books} Books</p>
-                </div>
-              </Card>
-            </Link>
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="py-16 text-center text-muted-foreground">Loading writers...</div>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {writers.slice(0, 12).map((writer) => (
+              <Link to={`/writer/${writer.writerId}`} key={writer._id}>
+                <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer text-center h-full">
+                  <div className="w-full aspect-square overflow-hidden bg-muted">
+                    {writer.image ? (
+                      <img
+                        src={writer.image}
+                        alt={getDisplayText(writer.name)}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : null}
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold text-sm mb-1 text-foreground">{getDisplayText(writer.name)}</h3>
+                    <p className="text-xs text-muted-foreground mb-1 line-clamp-2">{getDisplayText(writer.desc)}</p>
+                    <p className="text-xs text-primary font-medium">{countBooks(writer.writerId)} Books</p>
+                  </div>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

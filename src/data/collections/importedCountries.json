@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "6656d6afde9efcc8f2304c05"
+  },
+  "name": [
+    " মিশর, কায়রো",
+    "Cairo,  Egypt",
+    " مصر، القاهرة"
+  ]
+},
+{
+  "_id": {
+    "$oid": "665d5cba2d0d4c6818c188c2"
+  },
+  "name": [
+    " বৈরুত, লেবানন",
+    "Beirut, Lebanon",
+    "بيروت، لبنان"
+  ],
+  "countryId": "country741674"
+},
+{
+  "_id": {
+    "$oid": "665d5cef2d0d4c6818c188c3"
+  },
+  "name": [
+    "রিয়াদ, সৌদি আরব",
+    "Riyadh, Saudi Arabia",
+    "الرياض، المملكة العربية السعودية"
+  ],
+  "countryId": "country49201"
+},
+{
+  "_id": {
+    "$oid": "665d5d242d0d4c6818c188c4"
+  },
+  "name": [
+    "ইন্দোনেশিয়া",
+    "Indonesia",
+    "إندونيسيا"
+  ],
+  "countryId": "country405984"
+},
+{
+  "_id": {
+    "$oid": "665d5d552d0d4c6818c188c5"
+  },
+  "name": [
+    "দমেস্ক, সিরিয়া",
+    "Damascus, Syria",
+    "دمشق، سوريا"
+  ],
+  "countryId": "country32757"
+},
+{
+  "_id": {
+    "$oid": "665d5d984cd83aabbd903222"
+  },
+  "name": [
+    "তুরস্ক",
+    "Türkiye",
+    "تركيا"
+  ],
+  "countryId": "country370926"
+},
+{
+  "_id": {
+    "$oid": "665d5dd950d8e313270afe00"
+  },
+  "name": [
+    "পাকিস্থান",
+    "Pakistan",
+    "باكستان"
+  ],
+  "countryId": "country333410"
+},
+{
+  "_id": {
+    "$oid": "665d5dfb50d8e313270afe01"
+  },
+  "name": [
+    "ভারত",
+    "India",
+    "الهند"
+  ],
+  "countryId": "country22119"
+},
+{
+  "_id": {
+    "$oid": "665d62492d0d4c6818c188c6"
+  },
+  "name": [
+    "বাংলাদেশ",
+    "Bangladesh",
+    "بنغلاديش"
+  ],
+  "countryId": "country354640"
+}]

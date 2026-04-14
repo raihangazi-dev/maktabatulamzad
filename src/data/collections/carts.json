@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "679c65d76337113301d895da"
+  },
+  "name": "Raihan Gazi",
+  "mail": "rayhangazi1024@gmail.com",
+  "fullAddress": {
+    "district": "barisal",
+    "city": "Kamrangir char",
+    "zip": "1211",
+    "moreDetails": "west mominbag, syleti bazar, manik miar bari"
+  },
+  "phone": "01734768772",
+  "orders": [
+    {
+      "bookId": "665d663edea717d2b67f5d85",
+      "title": [
+        "আস-সিরাজী ফিল মিরাস",
+        "As-Siraji Fil Miras",
+        "السراجي في الميراث"
+      ],
+      "items": 1,
+      "price": 250
+    }
+  ],
+  "deliveryCharge": 120,
+  "status": "delivered",
+  "timestamp": {
+    "$date": "2025-01-31T05:55:35.511Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67de5d3a9fa33f3aaf739b7d"
+  },
+  "name": "Kamrul Islam ",
+  "mail": "kamrul01820islam@gmail.com",
+  "fullAddress": {
+    "district": "chittagong",
+    "city": "Chandpur ",
+    "zip": "৩৬১০",
+    "moreDetails": "Rustompur, Gridakalindia,  Faridgonj,  Chandpur"
+  },
+  "phone": "01773488064",
+  "orders": [
+    {
+      "bookId": "66570d2ccb59b5bc692c7efb",
+      "title": [
+        "আদাবুল মুফরাদ",
+        "Adabul Mufrad",
+        "الأدب المفرد"
+      ],
+      "items": 1,
+      "price": 600
+    },
+    {
+      "bookId": "665706b6347218fa89079b58",
+      "title": [
+        "রিয়াজুস সালিহিন",
+        "Riyazus Salihin",
+        "رياض الصالحين"
+      ],
+      "items": 1,
+      "price": 700
+    }
+  ],
+  "deliveryCharge": 120,
+  "status": "confirmed",
+  "timestamp": {
+    "$date": "2025-03-22T06:48:26.174Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6905a2ea56c3f385397f7f60"
+  },
+  "name": "sahadat hossain",
+  "mail": "sahadat1024@gmail.com",
+  "fullAddress": {
+    "district": "dhaka",
+    "city": "Kamrangir Char",
+    "zip": "1211",
+    "moreDetails": "syleti bazar"
+  },
+  "phone": "01778638980",
+  "orders": [
+    {
+      "bookId": "6655bf844796dfecdc11393f",
+      "title": [
+        "তাফসীরে বায়যাবী",
+        "Tafseere Bayzabi",
+        "التفسير للبيضوي"
+      ],
+      "items": 1,
+      "price": 550
+    }
+  ],
+  "deliveryCharge": 60,
+  "status": "pending",
+  "timestamp": {
+    "$date": "2025-11-01T06:04:26.988Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69172cdccde3486d4668aed3"
+  },
+  "name": "Shahin Rahman",
+  "mail": "shahin@gmail.com",
+  "fullAddress": {
+    "district": "dhaka",
+    "city": "heheuhw",
+    "zip": "heuiwhew",
+    "moreDetails": "rtbhwre\n"
+  },
+  "phone": "01673266743764",
+  "orders": [
+    {
+      "bookId": "66570872347218fa89079b59",
+      "title": [
+        "রিয়াজুস সালিহিন",
+        "Riyazus Salihin",
+        "رياض الصالحين"
+      ],
+      "items": 3,
+      "price": 600
+    }
+  ],
+  "deliveryCharge": 60,
+  "status": "pending",
+  "timestamp": {
+    "$date": "2025-11-14T13:21:32.650Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69172d267a7537b4861143ba"
+  },
+  "name": "sahadat hossain",
+  "mail": "sahadat1024@gmail.com",
+  "fullAddress": {
+    "district": "barisal",
+    "city": "heheuhw",
+    "zip": "1211",
+    "moreDetails": "vyerghre"
+  },
+  "phone": "01834768771",
+  "orders": [
+    {
+      "bookId": "6655b81511ce33d3e9ca1c91",
+      "title": [
+        "আদ দেওয়ানুল মুতানাব্বী",
+        "Ad Dewanul Mutanabbih",
+        "ديوان المتنبيه"
+      ],
+      "items": 3,
+      "price": 250
+    }
+  ],
+  "deliveryCharge": 120,
+  "status": "pending",
+  "timestamp": {
+    "$date": "2025-11-14T13:22:46.072Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "694d1fa0212a958ed2b777ba"
+  },
+  "name": "Md Abul Khayer Raihan",
+  "mail": "abul.khayer.raihan@gmail.com",
+  "fullAddress": {
+    "district": "dhaka",
+    "city": "Kamrangir char",
+    "zip": "1211",
+    "moreDetails": "Syleti Bazar"
+  },
+  "phone": "01734768772",
+  "orders": [
+    {
+      "bookId": "665d663edea717d2b67f5d85",
+      "title": [
+        "আস-সিরাজী ফিল মিরাস",
+        "As-Siraji Fil Miras",
+        "السراجي في الميراث"
+      ],
+      "items": 4,
+      "price": 250
+    },
+    {
+      "bookId": "6655b541897f6ab112ac3e25",
+      "title": [
+        "শরহে নুখবাতিল ফিকর",
+        "Sharhe Nukhbatil fikr",
+        "شرح نخبة الفكر"
+      ],
+      "items": 1,
+      "price": 375
+    },
+    {
+      "bookId": "6655c65a57dba8c5ff48a5d9",
+      "title": [
+        "আল-ফাওজুল কাবির",
+        "Al-Fawzul Kabir",
+        "الفوز الكبير"
+      ],
+      "items": 4,
+      "price": 200
+    }
+  ],
+  "deliveryCharge": 60,
+  "status": "pending",
+  "timestamp": {
+    "$date": "2025-12-25T11:27:28.324Z"
+  }
+}]

@@ -2,7 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { AlertCircle, LoaderCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { z } from "zod";
 
 import AuthShell from "@/components/AuthShell";
@@ -33,10 +33,12 @@ const signInSchema = z.object({
 type SignInValues = z.infer<typeof signInSchema>;
 
 const SignIn = () => {
+  const location = useLocation();
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { signIn, user, loading } = useAuth();
+  const { signIn, signInWithGoogle, user, loading, refreshProfile } = useAuth();
   const [submitError, setSubmitError] = useState("");
+  const from = (location.state as { from?: { pathname?: string } } | undefined)?.from?.pathname || "/";
 
   const form = useForm<SignInValues>({
     resolver: zodResolver(signInSchema),
@@ -49,22 +51,39 @@ const SignIn = () => {
 
   useEffect(() => {
     if (!loading && user) {
-      navigate("/", { replace: true });
+      navigate(from, { replace: true });
     }
-  }, [loading, navigate, user]);
+  }, [from, loading, navigate, user]);
 
   const onSubmit = async ({ email, password }: SignInValues) => {
     setSubmitError("");
 
     try {
       await signIn(email, password);
+      await refreshProfile();
 
       toast({
         title: "Signed in successfully",
         description: "Welcome back to Maktabatul Amzad.",
       });
 
-      navigate("/", { replace: true });
+      navigate(from, { replace: true });
+    } catch (error) {
+      setSubmitError(getAuthErrorMessage(error));
+    }
+  };
+
+  const onGoogleSignIn = async () => {
+    setSubmitError("");
+
+    try {
+      await signInWithGoogle();
+      await refreshProfile();
+      toast({
+        title: "Signed in successfully",
+        description: "Welcome back to Maktabatul Amzad.",
+      });
+      navigate(from, { replace: true });
     } catch (error) {
       setSubmitError(getAuthErrorMessage(error));
     }
@@ -111,9 +130,14 @@ const SignIn = () => {
                 <FormItem>
                   <div className="flex items-center justify-between gap-3">
                     <FormLabel>Password</FormLabel>
-                    <Link to="/sign-up" className="text-sm font-medium text-primary hover:text-primary/80">
-                      Need an account?
-                    </Link>
+                    <div className="flex items-center gap-3 text-sm">
+                      <Link to="/reset-password" className="font-medium text-primary hover:text-primary/80">
+                        Forgot password?
+                      </Link>
+                      <Link to="/sign-up" className="font-medium text-primary hover:text-primary/80">
+                        Need an account?
+                      </Link>
+                    </div>
                   </div>
                   <FormControl>
                     <Input type="password" placeholder="Enter your password" autoComplete="current-password" {...field} />
@@ -153,6 +177,10 @@ const SignIn = () => {
             ) : (
               "Sign In"
             )}
+          </Button>
+
+          <Button type="button" variant="outline" size="lg" className="w-full" onClick={onGoogleSignIn}>
+            Continue with Google
           </Button>
 
           <div className="space-y-4">

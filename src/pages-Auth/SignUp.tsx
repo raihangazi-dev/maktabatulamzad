@@ -42,7 +42,7 @@ type SignUpValues = z.infer<typeof signUpSchema>;
 const SignUp = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { createUser, user, loading } = useAuth();
+  const { createUser, signInWithGoogle, user, loading, refreshProfile } = useAuth();
   const [submitError, setSubmitError] = useState("");
 
   const form = useForm<SignUpValues>({
@@ -67,10 +67,29 @@ const SignUp = () => {
 
     try {
       await createUser(email, password, fullName);
+      await refreshProfile();
 
       toast({
         title: "Account created",
         description: "Your Maktabatul Amzad account is ready to use.",
+      });
+
+      navigate("/", { replace: true });
+    } catch (error) {
+      setSubmitError(getAuthErrorMessage(error));
+    }
+  };
+
+  const onGoogleSignUp = async () => {
+    setSubmitError("");
+
+    try {
+      await signInWithGoogle();
+      await refreshProfile();
+
+      toast({
+        title: "Account ready",
+        description: "Signed in with Google successfully.",
       });
 
       navigate("/", { replace: true });
@@ -188,6 +207,10 @@ const SignUp = () => {
             ) : (
               "Create Account"
             )}
+          </Button>
+
+          <Button type="button" variant="outline" size="lg" className="w-full" onClick={onGoogleSignUp}>
+            Continue with Google
           </Button>
 
           <div className="space-y-4">

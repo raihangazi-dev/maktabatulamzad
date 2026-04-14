@@ -1,0 +1,367 @@
+[{
+  "_id": {
+    "$oid": "6655b0b0a7dacb67e52fd5f4"
+  },
+  "name": [
+    "মাকতাবাতুল আমজাদ",
+    "Maktabatul Amzad",
+    "مكتبة الأمجاد"
+  ],
+  "publisherId": "country981767",
+  "image": "https://i.ibb.co/jRMC6ct/888888.jpg"
+},
+{
+  "_id": {
+    "$oid": "6656d6afde9efcc8f2304c05"
+  },
+  "name": [
+    "দারুল হাদীস, মিশর, কায়রো",
+    "Darel Hadith, Egypt, Cairo ",
+    "دا رالحديث، مصر، القاهرة"
+  ],
+  "publisherId": "country364000",
+  "image": "https://i.ibb.co/Rb5gGwS/darul-hadith.jpg"
+},
+{
+  "_id": {
+    "$oid": "6656e28b2cd927f82a2bd53d"
+  },
+  "name": [
+    "দার ইবনুল জাওযী, কায়রো, মিশর",
+    "Dar ibn jawzi, cairo, egypt",
+    "دار ابن الجوزي ، مصر، القاهرة"
+  ],
+  "publisherId": "country631352",
+  "image": "https://i.ibb.co/mB3V3pp/445191633-832589498894819-2554241558632271322-n.jpg"
+},
+{
+  "_id": {
+    "$oid": "66571892438acbeb49f81ed9"
+  },
+  "name": [
+    "মু’আস্সাতুর রিসালাহ, লেবানন",
+    "Mu'assatur Risalah, Lebanon",
+    "مئسسة الرسالة, لبنان"
+  ],
+  "publisherId": "country965713",
+  "image": "https://i.ibb.co/gyTJyRH/image.jpg"
+},
+{
+  "_id": {
+    "$oid": "66572fafb27005bb5f8c56d8"
+  },
+  "name": [
+    "দারু ইবনে হাজম, বৈরুত, লেবানন",
+    "Daru Ibn Hazm, Beirut, Lebanon",
+    "دار ابن حزم، بيروت، لبنان"
+  ],
+  "publisherId": "country5404",
+  "image": "https://i.ibb.co/2W9gFHx/b-Chs9-F3-FWQ1-GEd-Bs-Gipm-MR9-WRLh2j9rf-Opm-QDAFN.webp"
+},
+{
+  "_id": {
+    "$oid": "665730c3b27005bb5f8c56d9"
+  },
+  "name": [
+    "রেসালাতুল আলামিয়া, বৈরুত, লেবানন",
+    "Resalatul Alamia, Beirut, Lebanon",
+    "الرسالة العالمية، بيروت، لبنان"
+  ],
+  "publisherId": "country5223",
+  "image": "https://i.ibb.co/VLwNxKz/logo.png"
+},
+{
+  "_id": {
+    "$oid": "6657315eb27005bb5f8c56da"
+  },
+  "name": [
+    "দারুল কলম, দামেস্ক, সিরিয়া",
+    "Darul Qalam, Damascus, Syria",
+    "دار القلم، دمشق، سوريا"
+  ],
+  "publisherId": "country929640",
+  "image": "https://i.ibb.co/Fx9Wnyw/LOGO.jpg"
+},
+{
+  "_id": {
+    "$oid": "66573257c751cb1e25d73b8b"
+  },
+  "name": [
+    "আল মাকতাবাতুত তাওফিকিইয়া, মিশর",
+    "Al Maktabat Tawfiqiyyah, Egypt",
+    "المكتبات التوفيقية، مصر"
+  ],
+  "publisherId": "country860480",
+  "image": "https://i.ibb.co/Cwzf0qp/books-library-com-12152217-Nc8-M9.jpg"
+},
+{
+  "_id": {
+    "$oid": "66573327c751cb1e25d73b8c"
+  },
+  "name": [
+    "দারুস সালেহ, মিশর",
+    "Darus Saleh, Egypt",
+    "دار الصالح, مصر"
+  ],
+  "publisherId": "country640666",
+  "image": "https://i.ibb.co/JQL0wkc/images-1.jpg"
+},
+{
+  "_id": {
+    "$oid": "665733d8c751cb1e25d73b8d"
+  },
+  "name": [
+    "মাকতাবাতুস সফা, মিশর",
+    "Maktabatus Safa, Egypt",
+    "مكتبة الصفا, مصر"
+  ],
+  "publisherId": "country49482",
+  "image": "https://i.ibb.co/N2X0QgS/images-2.jpg"
+},
+{
+  "_id": {
+    "$oid": "665734de10c165c44bc66d23"
+  },
+  "name": [
+    "মাকতাবাতুল আশরাফিয়া, ভারত",
+    "Maktabatul Ashrafia, India",
+    "مكتبة الأشرفية, هند"
+  ],
+  "publisherId": "country192100"
+},
+{
+  "_id": {
+    "$oid": "6657355f10c165c44bc66d24"
+  },
+  "name": [
+    "মাকতাবাতুয যাকারিয়া, ভারত",
+    "Maktabatuz Zakaria, India",
+    "مكتبة الزكارية, هند"
+  ],
+  "publisherId": "country840657"
+},
+{
+  "_id": {
+    "$oid": "6657361810c165c44bc66d25"
+  },
+  "name": [
+    "মাকতাবাতুল বুশরা, পাকিস্থান",
+    "Maktabatul Bushra, Pakistan",
+    "مكتبة البشرى, باكستان"
+  ],
+  "publisherId": "country819408",
+  "image": "https://i.ibb.co/L52bzdS/1.jpg"
+},
+{
+  "_id": {
+    "$oid": "6657373b517768a2ec8cf6ab"
+  },
+  "name": [
+    "মাকতাবাতুর রুশদ, রিয়াদ",
+    "Maktabatur Rushd, Riyadh",
+    "مكتبة الرشد, رياض"
+  ],
+  "publisherId": "country177551",
+  "image": "https://i.ibb.co/rct4DsC/images-3.jpg"
+},
+{
+  "_id": {
+    "$oid": "665737d2dff5473f5631c34a"
+  },
+  "name": [
+    "দারুস সালাম, রিয়াদ",
+    "Darus Salam, Riyadh",
+    "دار السلام, رياض"
+  ],
+  "publisherId": "country708059",
+  "image": "https://i.ibb.co/kSFjyW3/books-library-com-11132228-Wi9-E0.jpg"
+},
+{
+  "_id": {
+    "$oid": "665c59c9a8df70affbeacaa3"
+  },
+  "name": [
+    "দারুল কিতাবিল আরাবী",
+    "Darul Kitabil Arabic",
+    "دار الكتاب العربي"
+  ],
+  "publisherId": "country467325",
+  "image": "https://i.ibb.co/tHSQtMk/logo-2.png"
+},
+{
+  "_id": {
+    "$oid": "665d8db37789bbe8d7ba2258"
+  },
+  "name": [
+    "দারু ইবনে কাসির",
+    "দারু ইবনে কাসির",
+    "دار إبن كثير"
+  ],
+  "publisherId": "country815613",
+  "image": "https://i.ibb.co/9YxqwPQ/download.png"
+},
+{
+  "_id": {
+    "$oid": "693963ba2b28b819a686321a"
+  },
+  "name": [
+    "ইবদা",
+    "Ebdaa",
+    "إبداع"
+  ],
+  "publisherId": "country579706"
+},
+{
+  "_id": {
+    "$oid": "693969c8627a93044b934a7c"
+  },
+  "name": [
+    "দারুল মিনহাজ ",
+    "Darul Minhaz",
+    "دار المنهاج"
+  ],
+  "publisherId": "country107153"
+},
+{
+  "_id": {
+    "$oid": "693a4d945c1da6966c9738af"
+  },
+  "name": [
+    "দারুল কুতুবিল ইলমিয়্যাহ",
+    "Dar Al-Kotob Al-ilmiyah",
+    "دار الكتب العلمية"
+  ],
+  "publisherId": "country283300"
+},
+{
+  "_id": {
+    "$oid": "693a4d955c1da6966c9738b0"
+  },
+  "name": [
+    "দারুল কুতুবিল ইলমিয়্যাহ",
+    "Dar Al-Kotob Al-ilmiyah",
+    "دار الكتب العلمية"
+  ],
+  "publisherId": "country777619"
+},
+{
+  "_id": {
+    "$oid": "693a50e93c2de63584aa167c"
+  },
+  "name": [
+    "দারুল মা’রিফাহ ",
+    "Dar Al-marifah",
+    "دار المعرفة"
+  ],
+  "publisherId": "country350649"
+},
+{
+  "_id": {
+    "$oid": "693a61914e33fd7d5bc2ab0b"
+  },
+  "name": [
+    "আদ-দারুল আলামিয়্যাহ",
+    "Ad-darul Alamiyah",
+    "الدار العالمية"
+  ],
+  "publisherId": "country740743"
+},
+{
+  "_id": {
+    "$oid": "693a69347ad4b63b8228e7f7"
+  },
+  "name": [
+    "দারুত -তাওফীকিয়্যাহ",
+    "Darut-tawfiqiyah",
+    "دار التوفيقية للتراث"
+  ],
+  "publisherId": "country254514"
+},
+{
+  "_id": {
+    "$oid": "693d3ec21073080d1368edf4"
+  },
+  "name": [
+    "আল মাকতাবাতুল আসরিয়্যাহ",
+    "Al makatabatul Asriyyah",
+    "المكتبة العصرية"
+  ],
+  "publisherId": "country676842"
+},
+{
+  "_id": {
+    "$oid": "693d41f2a996f1be57895f78"
+  },
+  "name": [
+    "দারুল লুবাব ",
+    "Darul Lubab",
+    "دار اللباب"
+  ],
+  "publisherId": "country570513"
+},
+{
+  "_id": {
+    "$oid": "693d490bdd94bc68d1dd0d26"
+  },
+  "name": [
+    "দারুল ফাজার ",
+    "Darul Fazar",
+    "دار الفجر"
+  ],
+  "publisherId": "country161709"
+},
+{
+  "_id": {
+    "$oid": "693e89e565c513b73f703204"
+  },
+  "name": [
+    "আদ-দারুশ শামিয়াহ",
+    "Ad-darus Samih",
+    "الدار الشامية"
+  ],
+  "publisherId": "country412937"
+},
+{
+  "_id": {
+    "$oid": "693e994f1d610c702d65313a"
+  },
+  "name": [
+    "দারুল বাসাইর আল- ইসলামিয়্যাহ",
+    "Darul Basair Al-islamiyah",
+    "دار البشائر الاسلامية"
+  ],
+  "publisherId": "country329371"
+},
+{
+  "_id": {
+    "$oid": "693f91892c3930039ab75a21"
+  },
+  "name": [
+    "দারুল লু’লুআ",
+    "Darul Lulua",
+    " دار اللؤلؤة"
+  ],
+  "publisherId": "country553050"
+},
+{
+  "_id": {
+    "$oid": "693f9420d23daa89b1eaea5a"
+  },
+  "name": [
+    "মাকতাবাতুত তাকওয়া",
+    "Maktabatut Takwa",
+    "مكتبة التقوي"
+  ],
+  "publisherId": "country957851"
+},
+{
+  "_id": {
+    "$oid": "6943e3b9eb6eb1e61fca0940"
+  },
+  "name": [
+    "আল মাকতাবুল ইসলামিয়ু",
+    "Al Maktabul Islamiyu",
+    "المكتب الاسلامي"
+  ],
+  "publisherId": "country841634"
+}]

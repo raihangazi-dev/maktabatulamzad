@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6633311bb1eebbf8fd0d891c"
+  },
+  "name": "Maktabatul Amzad",
+  "email": "maktabatulamzad@gmail.com",
+  "role": "user",
+  "address": {
+    "district": "barisal",
+    "city": "",
+    "zip": "",
+    "details": ""
+  },
+  "phone": ""
+},
+{
+  "_id": {
+    "$oid": "679c65ad279babe035bb152f"
+  },
+  "name": "Raihan Gazi",
+  "email": "rayhangazi1024@gmail.com",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "67a97745634c42871c09e0b6"
+  },
+  "name": "masrur ashrafi",
+  "email": "ashrafimasrur30@gmail.com",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "67fccb7dc4292193b10df42e"
+  },
+  "name": "مولانا عمران أشرفي",
+  "email": "emran234@gmail.com",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "68fb0ddede78ab985153272a"
+  },
+  "name": "Md.Taqi",
+  "email": "mohibullahm569@gmail.com",
+  "role": "user",
+  "address": {
+    "district": "chittagong",
+    "city": "Raozan",
+    "zip": "",
+    "details": "West Gahira, Brickfield, Raozan, Chittagong."
+  },
+  "phone": "01881020690"
+},
+{
+  "_id": {
+    "$oid": "69059f8156c3f385397f7f5f"
+  },
+  "name": "sahadat hossain",
+  "email": "sahadat1024@gmail.com",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "693417462e3889f00e3c99f3"
+  },
+  "name": "Md Abul Khayer Raihan",
+  "email": "abul.khayer.raihan@gmail.com",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "69341dc88e5334f4b7baa275"
+  },
+  "name": "Borhan Ashrafi",
+  "email": "borhanashrafi8016@gmail.com",
+  "role": "user"
+}]

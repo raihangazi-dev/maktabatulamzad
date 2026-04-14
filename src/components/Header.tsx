@@ -10,13 +10,17 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
+import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/context/Authcontext";
 import logo from "@/assets/logo.png";
+import { FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
-  const { user, logOut } = useAuth();
+  const { user, role, logOut } = useAuth();
+  const { itemCount } = useCart();
+  const [searchText, setSearchText] = useState("");
 
   const handleLogout = async () => {
     try {
@@ -35,6 +39,12 @@ const Header = () => {
     }
   };
 
+  const onSearch = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const query = searchText.trim();
+    navigate(query ? `/books?q=${encodeURIComponent(query)}` : "/books");
+  };
+
   return (
     <header className="sticky top-0 z-50 shadow-lg">
       {/* Top Bar */}
@@ -51,10 +61,12 @@ const Header = () => {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-white hover:text-primary hover:bg-transparent h-auto py-1 px-2">
-              <ShoppingCart className="h-4 w-4 mr-1" />
-              Cart (0 item)
-            </Button>
+            <Link to="/cart">
+              <Button variant="ghost" size="sm" className="text-white hover:text-primary hover:bg-transparent h-auto py-1 px-2">
+                <ShoppingCart className="h-4 w-4 mr-1" />
+                Cart ({itemCount} item)
+              </Button>
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="text-white hover:text-primary hover:bg-transparent h-auto py-1 px-2">
@@ -81,6 +93,33 @@ const Header = () => {
                       {user.displayName || user.email}
                     </DropdownMenuLabel>
                     <DropdownMenuSeparator />
+                    <DropdownMenuItem asChild>
+                      <Link to="/user/profile">My Profile</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/user/orders">My Orders</Link>
+                    </DropdownMenuItem>
+                    {role === "admin" ? (
+                      <>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem asChild>
+                          <Link to="/admin/dashboard">Admin Dashboard</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/admin/orders">Admin Orders</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/admin/catalog">Admin Catalog CRUD</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/admin/profile">Admin Profile</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/admin/users">Admin Users</Link>
+                        </DropdownMenuItem>
+                      </>
+                    ) : null}
+                    <DropdownMenuSeparator />
                     <DropdownMenuItem onSelect={() => void handleLogout()}>Logout</DropdownMenuItem>
                   </>
                 ) : (
@@ -103,38 +142,42 @@ const Header = () => {
       <nav className="bg-primary text-primary-foreground py-4 px-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4 lg:gap-8 flex-1">
-            <img src={logo} alt="Bookstore Logo" className="h-10 md:h-12 w-auto" />
+            <Link to="/">
+              <img src={logo} alt="Bookstore Logo" className="h-10 md:h-12 w-auto" />
+            </Link>
             <div className="hidden lg:flex items-center gap-4 xl:gap-6">
-              <a href="/" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+              <Link to="/" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
                 Home
-              </a>
-              <a href="/books" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+              </Link>
+              <Link to="/books" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
                 Books
-              </a>
-              <a href="/writers" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+              </Link>
+              <Link to="/writers" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
                 Writers
-              </a>
-              <a href="/publishers" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+              </Link>
+              <Link to="/publishers" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
                 Publishers
-              </a>
-              <a href="/category" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
-                Category
-              </a>
-              <a href="/about" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+              </Link>
+              <Link to="/categories" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
+                Categories
+              </Link>
+              <Link to="/about" className="font-medium hover:text-gold transition-colors text-sm xl:text-base">
                 About
-              </a>
+              </Link>
             </div>
           </div>
-          <div className="flex items-center gap-2 md:gap-4">
+          <form className="flex items-center gap-2 md:gap-4" onSubmit={onSearch}>
             <Input
               type="search"
+              value={searchText}
+              onChange={(event) => setSearchText(event.target.value)}
               placeholder="Search..."
               className="w-32 sm:w-48 md:w-64 bg-white text-dark placeholder:text-muted-foreground"
             />
-            <Button variant="destructive" size="default" className="hidden sm:inline-flex">
+            <Button variant="destructive" size="default" className="hidden sm:inline-flex" type="submit">
               Submit
             </Button>
-          </div>
+          </form>
         </div>
       </nav>
     </header>

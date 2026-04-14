@@ -8,10 +8,11 @@ interface BookCardProps {
   title: string;
   author: string;
   image: string;
-  price: string;
+  price: string | number;
+  onAddToCart?: () => void;
 }
 
-const BookCard = ({ id = "1", title, author, image, price }: BookCardProps) => {
+const BookCard = ({ id = "1", title, author, image, price, onAddToCart }: BookCardProps) => {
   return (
     <Link to={`/book/${id}`}>
       <Card className="group overflow-hidden border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -30,7 +31,10 @@ const BookCard = ({ id = "1", title, author, image, price }: BookCardProps) => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary/90"
-              onClick={(e) => e.preventDefault()}
+              onClick={(e) => {
+                e.preventDefault();
+                onAddToCart?.();
+              }}
             >
               <ShoppingCart className="h-4 w-4 mr-1" />
               Add
