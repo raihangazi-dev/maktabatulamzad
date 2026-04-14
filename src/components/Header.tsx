@@ -4,12 +4,37 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Input } from "@/components/ui/input";
+import { toast } from "@/components/ui/use-toast";
+import { useAuth } from "@/context/Authcontext";
 import logo from "@/assets/logo.png";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const { user, logOut } = useAuth();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      toast({
+        title: "Signed out",
+        description: "You have been logged out successfully.",
+      });
+      navigate("/", { replace: true });
+    } catch (error) {
+      toast({
+        title: "Unable to sign out",
+        description: error instanceof Error ? error.message : "Please try again.",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 shadow-lg">
       {/* Top Bar */}
@@ -46,12 +71,28 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="sm" className="text-white hover:text-primary hover:bg-transparent h-auto py-1 px-2">
                   <User className="h-4 w-4 mr-1" />
-                  Account <ChevronDown className="h-3 w-3 ml-1" />
+                  {user?.displayName || "Account"} <ChevronDown className="h-3 w-3 ml-1" />
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem>Profile</DropdownMenuItem>
-                <DropdownMenuItem>Logout</DropdownMenuItem>
+                {user ? (
+                  <>
+                    <DropdownMenuLabel className="max-w-52 truncate">
+                      {user.displayName || user.email}
+                    </DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem onSelect={() => void handleLogout()}>Logout</DropdownMenuItem>
+                  </>
+                ) : (
+                  <>
+                    <DropdownMenuItem asChild>
+                      <Link to="/sign-in">Sign In</Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link to="/sign-up">Sign Up</Link>
+                    </DropdownMenuItem>
+                  </>
+                )}
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
